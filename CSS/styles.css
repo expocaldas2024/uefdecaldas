@@ -1,0 +1,240 @@
+/* Importar fuentes personalizadas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Ajustes generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado (Header) */
+header {
+    background-color: #1d3557;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a8dadc;
+}
+
+/* Hero Section (Pantalla principal) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagenes/hero-banner.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 150px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.hero .btn {
+    padding: 15px 40px;
+    background-color: #457b9d;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn:hover {
+    background-color: #1d3557;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Secciones generales */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #1d3557;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Sección 'Sobre la Feria' */
+#about {
+    background-color: #e9ecef;
+    padding: 80px 20px;
+    border-top: 4px solid #457b9d;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #343a40;
+}
+
+/* Sección 'Proyectos Destacados' */
+#projects {
+    padding: 80px 20px;
+    background-color: #f1f1f1;
+    border-top: 4px solid #457b9d;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.project-links a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #457b9d;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: #1d3557;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección 'Próximamente' */
+#upcoming {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    border-top: 4px solid #457b9d;
+}
+
+#upcoming h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+#upcoming p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Pie de página (Footer) */
+footer {
+    background-color: #1d3557;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+footer p a {
+    color: #a8dadc;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero .btn {
+        padding: 10px 25px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
